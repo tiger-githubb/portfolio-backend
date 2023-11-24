@@ -26,6 +26,12 @@
       ],
       "type": "media",
       "multiple": false
+    },
+    "categories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::category.category",
+      "mappedBy": "blogs"
     }
   }
 }
